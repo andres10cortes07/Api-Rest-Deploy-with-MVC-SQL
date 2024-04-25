@@ -1,0 +1,19 @@
+{
+  "name": "curso3",
+  "description": "Curso 3 API REST",
+  "main": "1.app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node 1.app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Franklin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.19.2",
+    "mysql2": "3.9.7",
+    "uuid": "^9.0.1",
+    "zod": "3.22.5"
+  }
+}

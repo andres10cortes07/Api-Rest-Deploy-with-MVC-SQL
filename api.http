@@ -1,0 +1,37 @@
+###obtener todas las peliculas
+GET http://localhost:4999/peliculas
+
+###obtener peliculas por id
+GET http://localhost:4999/peliculas/b376dcb4-0277-11ef-85af-d85ed3ffda3c
+###obtener peliculas por genero y año
+GET http://localhost:4999/peliculas?genre=DramA&year=1994
+
+###creacion de peliculas
+POST http://localhost:4999/peliculas
+Content-Type: application/json
+
+{
+    "title": "pelicula x",
+    "year": 1980,
+    "director": "yo",
+    "duration": 123,
+    "genre": [
+      "Action"
+    ],
+    "rate": 9.8,
+    "poster" : "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2014/12/428340-critica-jugador-mark-wahlberg.jpg?tf=3840x"
+  }
+
+### Modificacion de pelicula
+PATCH http://localhost:4999/peliculas/4d2bb9a3-0277-11ef-85af-d85ed3ffda3c
+Content-Type: application/json
+
+{
+  "title" : "FICCION DE PULPO MODIFICADA3",
+  "year" : 1950,
+  "director": "pepa pig",
+  "genre" : ["Adventure"]
+}
+
+### Eliminacion de pelicula
+DELETE  http://localhost:4999/peliculas/4d2bb9a3-0277-11ef-85af-d85ed3ffda3c
