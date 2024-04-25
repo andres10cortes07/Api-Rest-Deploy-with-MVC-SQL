@@ -1,11 +1,11 @@
 import mysql from "mysql2/promise";
 
 const config = {
-    host: "localhost",
-    password: "password;)",
-    user: "root",
-    port: 3350,
-    bd: "peliculasBD"
+    host: "bv54c7nekovcvl5wj3aq-mysql.services.clever-cloud.com",
+    password: "xeRkj9mWQuHGj3XOomYP",
+    user: "ur9mnznj2bp5ggen",
+    port: 3306,
+    bd: "bv54c7nekovcvl5wj3aq"
 }
 
 export const queryObtenerPeliculaId = `
